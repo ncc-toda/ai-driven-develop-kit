@@ -26,6 +26,7 @@ devbox run format
 | 内容                       | ドキュメント                                                           |
 | -------------------------- | ---------------------------------------------------------------------- |
 | セットアップ手順           | [docs/rules/general/setup.md](docs/rules/general/setup.md)             |
+| プロジェクト構造           | [docs/rules/general/structure.md](docs/rules/general/structure.md)     |
 | コミットルール・pre-commit | [docs/rules/git/git-common.md](docs/rules/git/git-common.md)           |
 | 現フェーズの Git 運用      | [docs/rules/git/git-pre-release.md](docs/rules/git/git-pre-release.md) |
 | タスク管理                 | [docs/pre-release-task/index.md](docs/pre-release-task/index.md)       |

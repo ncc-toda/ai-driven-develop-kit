@@ -46,13 +46,13 @@ devbox run setup
 
 ```txt
 .
-├── .pre-commit-config.yaml  # pre-commit 設定
-├── .prettierrc.json         # oxfmt 設定 (Prettier 互換)
-├── .markdownlint.json       # markdownlint 設定
-├── devbox.json              # 開発環境設定
-├── devbox.lock              # ロックファイル
-└── README.md                # このファイル
+├── backend/                 # バックエンド（API サーバー等）
+├── frontend/                # フロントエンド（Web/モバイルアプリ等）
+├── docs/                    # ドキュメント
+└── ...                      # 設定ファイル類
 ```
+
+詳細は [docs/rules/general/structure.md](docs/rules/general/structure.md) を参照してください。
 
 ## ライセンス
 
