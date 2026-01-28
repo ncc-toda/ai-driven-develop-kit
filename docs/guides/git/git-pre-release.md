@@ -31,8 +31,8 @@
 
 GitHub Issue の代わりに、ローカルの markdown ファイルでタスクを管理します。
 
-- タスク一覧: `docs/pre-release-task/index.md`
-- タスク詳細: `docs/pre-release-task/detail/`
+- タスク一覧: `docs/tasks/pre-release/index.md`
+- タスク詳細: `docs/tasks/pre-release/detail/`
 
 ### タスク ID
 

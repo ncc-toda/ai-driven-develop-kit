@@ -9,11 +9,15 @@
 ├── backend/                 # バックエンド
 ├── frontend/                # フロントエンド
 ├── docs/                    # ドキュメント
-│   ├── guides/               # 開発ルール・ガイドライン
+│   ├── guides/              # 開発ルール・ガイドライン
 │   │   ├── general/         # 全般（セットアップ、構造など）
 │   │   ├── git/             # Git 運用ルール
 │   │   └── workflows/       # AI 向けワークフロー定義
-│   │       └── _common/     # 共通手順
+│   │       ├── _parts/      # 共通手順
+│   │       ├── common/      # 共通ワークフロー
+│   │       ├── pre-release/ # pre-release ワークフロー
+│   │       └── post-release/# post-release ワークフロー
+│   ├── specs/               # 仕様書・設計書
 │   └── tasks/               # タスク管理
 │       ├── pre-release/     # pre-release フェーズのタスク
 │       └── ai-logs/         # 作業ログ
