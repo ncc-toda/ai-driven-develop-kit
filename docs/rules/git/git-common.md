@@ -97,3 +97,32 @@ git commit --no-verify -m "message"
 
 - 必ずユーザーの承認を得てから実行すること
 - 理由を明確にし、承認を得た上で実行すること
+
+## GitHub CLI（gh）の使用
+
+GitHub に関連する操作は GitHub CLI（`gh`）を使用すること。
+
+### 基本方針
+
+- Issue、PR の操作は `gh` コマンドを使用する
+- リポジトリ情報の取得も `gh` コマンドを使用する
+- ローカルの git 操作（commit, branch, merge 等）は通常の `git` コマンドを使用する
+
+### 主要なコマンド
+
+| 操作             | コマンド例                                         |
+| ---------------- | -------------------------------------------------- |
+| Issue 作成       | `gh issue create --title "タイトル" --body "本文"` |
+| Issue 一覧       | `gh issue list`                                    |
+| Issue 詳細       | `gh issue view {番号}`                             |
+| PR 作成          | `gh pr create --title "タイトル" --body "本文"`    |
+| PR 一覧          | `gh pr list`                                       |
+| PR 詳細          | `gh pr view {番号}`                                |
+| PR マージ        | `gh pr merge {番号}`                               |
+| リポジトリ情報   | `gh repo view`                                     |
+| ワークフロー実行 | `gh workflow run {ワークフロー名}`                 |
+| CI ステータス    | `gh run list`                                      |
+
+### 参考
+
+- [GitHub CLI マニュアル](https://cli.github.com/manual/)
