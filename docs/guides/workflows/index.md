@@ -5,6 +5,9 @@
 
 ## pre-release（新規開発）
 
+プロジェクトの立ち上げから初回リリースまでのワークフローです。
+詳細は [pre-release/index.md](./pre-release/index.md) を参照。
+
 | ファイル                                                 | 用途             |
 | -------------------------------------------------------- | ---------------- |
 | [requirements.md](./pre-release/requirements.md)         | 要件定義         |
@@ -14,6 +17,9 @@
 | [impl-from-design.md](./pre-release/impl-from-design.md) | 設計に基づく実装 |
 
 ## post-release（運用）
+
+リリース後の保守・改善作業のワークフローです。
+詳細は [post-release/index.md](./post-release/index.md) を参照。
 
 | ファイル                                        | 用途             |
 | ----------------------------------------------- | ---------------- |

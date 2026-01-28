@@ -40,6 +40,8 @@ devbox run format
 
 ### pre-release（新規開発）
 
+詳細・推奨フローは [docs/guides/workflows/pre-release/index.md](docs/guides/workflows/pre-release/index.md) を参照。
+
 | ワークフロー     | ファイル                                                                                                       |
 | ---------------- | -------------------------------------------------------------------------------------------------------------- |
 | 要件定義         | [docs/guides/workflows/pre-release/requirements.md](docs/guides/workflows/pre-release/requirements.md)         |
@@ -49,6 +51,8 @@ devbox run format
 | 設計に基づく実装 | [docs/guides/workflows/pre-release/impl-from-design.md](docs/guides/workflows/pre-release/impl-from-design.md) |
 
 ### post-release（運用）
+
+詳細・選択ガイドは [docs/guides/workflows/post-release/index.md](docs/guides/workflows/post-release/index.md) を参照。
 
 | ワークフロー     | ファイル                                                                                               |
 | ---------------- | ------------------------------------------------------------------------------------------------------ |
