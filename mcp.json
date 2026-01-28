@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/anthropics/claude-code/main/.schema/mcp.schema.json",
+  "_comment": "MCP設定の参考テンプレート。本プロジェクトではむやみにMCPを使用しない方針です。必要な場合のみ、適切なディレクトリにコピーして使用してください。",
+  "mcpServers": {
+    "Context7": {
+      "_comment": "ライブラリ/フレームワークの最新ドキュメント検索",
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/context7-mcp"]
+    },
+    "fetch": {
+      "_comment": "URLからコンテンツを取得",
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
+    },
+    "mobile-mcp": {
+      "command": "npx",
+      "args": ["-y", "@mobilenext/mobile-mcp@latest"]
+    },
+    "pencil": {
+      "command": "/Applications/Pencil.app/Contents/Resources/app.asar.unpacked/out/mcp-server-darwin-arm64",
+      "args": ["--ws-port", "52036"],
+      "env": {},
+      "type": "stdio"
+    }
+  }
+}
