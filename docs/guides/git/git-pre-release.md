@@ -56,4 +56,4 @@ feat: Flutter テンプレートを追加 (001) :sparkles:
 1. 残っているタスクを確認
 2. 必要なタスクを GitHub Issue へ移行
 3. `docs/pre-release-task/` をアーカイブまたは削除
-4. `docs/rules/git/git-index.md` のフェーズを `post-release` に変更
+4. `docs/guides/git/git-index.md` のフェーズを `post-release` に変更

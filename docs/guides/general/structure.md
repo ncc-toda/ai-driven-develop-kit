@@ -9,7 +9,7 @@
 ├── backend/                 # バックエンド
 ├── frontend/                # フロントエンド
 ├── docs/                    # ドキュメント
-│   ├── rules/               # 開発ルール・ガイドライン
+│   ├── guides/               # 開発ルール・ガイドライン
 │   │   ├── general/         # 全般（セットアップ、構造など）
 │   │   ├── git/             # Git 運用ルール
 │   │   └── workflows/       # AI 向けワークフロー定義
@@ -56,8 +56,8 @@
 
 | サブディレクトリ     | 内容                               |
 | -------------------- | ---------------------------------- |
-| `rules/general/`     | セットアップ、プロジェクト構造など |
-| `rules/git/`         | Git 運用ルール                     |
-| `rules/workflows/`   | AI 向けワークフロー定義            |
+| `guides/general/`    | セットアップ、プロジェクト構造など |
+| `guides/git/`        | Git 運用ルール                     |
+| `guides/workflows/`  | AI 向けワークフロー定義            |
 | `tasks/pre-release/` | pre-release フェーズのタスク管理   |
 | `tasks/ai-logs/`     | 作業ログ                           |

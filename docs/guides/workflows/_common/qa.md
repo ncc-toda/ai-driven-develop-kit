@@ -3,6 +3,8 @@
 この手順は他のワークフローから呼び出される共通手順です。
 以下を順番に実行し、失敗した場合は対応すること。
 
+> **Note**: 利用可能なスクリプトは [スクリプト一覧](../../general/scripts.md) を参照してください。
+
 ## 実行手順
 
 ### 1. 静的解析
@@ -25,9 +27,13 @@ devbox run format
 
 プロジェクトに応じたテストコマンドを実行すること。
 
-- TypeScript: `npm test` または `pnpm test`
-- Dart/Flutter: `dart test` または `flutter test`
-- その他: プロジェクトの README やスクリプトを確認
+```bash
+# TypeScript
+devbox run test:ts
+
+# Dart
+devbox run test:dart
+```
 
 失敗した場合は修正すること。
 

@@ -36,7 +36,7 @@
 環境整備に伴い、以下のドキュメント更新を検討すること:
 
 - README.md
-- docs/rules/general/setup.md
+- docs/guides/general/setup.md
 - CLAUDE.md
 - その他関連ドキュメント
 

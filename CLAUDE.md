@@ -17,31 +17,32 @@ devbox shell
 # Lint & Format
 devbox run lint
 devbox run format
-
-# 言語別: lint:ts, format:ts, lint:md, lint:dart, format:dart, lint:swift, format:swift
 ```
+
+全スクリプトは [docs/guides/general/scripts.md](docs/guides/general/scripts.md) を参照。
 
 ## ドキュメント参照
 
-| 内容                       | ドキュメント                                                           |
-| -------------------------- | ---------------------------------------------------------------------- |
-| セットアップ手順           | [docs/rules/general/setup.md](docs/rules/general/setup.md)             |
-| プロジェクト構造           | [docs/rules/general/structure.md](docs/rules/general/structure.md)     |
-| コミットルール・pre-commit | [docs/rules/git/git-common.md](docs/rules/git/git-common.md)           |
-| 現フェーズの Git 運用      | [docs/rules/git/git-pre-release.md](docs/rules/git/git-pre-release.md) |
-| タスク管理                 | [docs/tasks/pre-release/index.md](docs/tasks/pre-release/index.md)     |
-| ワークフロー               | [docs/rules/workflows/index.md](docs/rules/workflows/index.md)         |
+| 内容                       | ドキュメント                                                             |
+| -------------------------- | ------------------------------------------------------------------------ |
+| セットアップ手順           | [docs/guides/general/setup.md](docs/guides/general/setup.md)             |
+| スクリプト一覧             | [docs/guides/general/scripts.md](docs/guides/general/scripts.md)         |
+| プロジェクト構造           | [docs/guides/general/structure.md](docs/guides/general/structure.md)     |
+| コミットルール・pre-commit | [docs/guides/git/git-common.md](docs/guides/git/git-common.md)           |
+| 現フェーズの Git 運用      | [docs/guides/git/git-pre-release.md](docs/guides/git/git-pre-release.md) |
+| タスク管理                 | [docs/tasks/pre-release/index.md](docs/tasks/pre-release/index.md)       |
+| ワークフロー               | [docs/guides/workflows/index.md](docs/guides/workflows/index.md)         |
 
 ## ワークフロー
 
 開発タスクはワークフローファイルに従って進めます。
 使用時は「`{ファイルパス}` に従って作業してください。{作業内容}」の形式で指示します。
 
-| ワークフロー     | ファイル                                                                   |
-| ---------------- | -------------------------------------------------------------------------- |
-| バグ修正         | [docs/rules/workflows/bug-fix.md](docs/rules/workflows/bug-fix.md)         |
-| 機能追加         | [docs/rules/workflows/feature-add.md](docs/rules/workflows/feature-add.md) |
-| リファクタリング | [docs/rules/workflows/refactor.md](docs/rules/workflows/refactor.md)       |
-| 環境整備         | [docs/rules/workflows/env-setup.md](docs/rules/workflows/env-setup.md)     |
+| ワークフロー     | ファイル                                                                     |
+| ---------------- | ---------------------------------------------------------------------------- |
+| バグ修正         | [docs/guides/workflows/bug-fix.md](docs/guides/workflows/bug-fix.md)         |
+| 機能追加         | [docs/guides/workflows/feature-add.md](docs/guides/workflows/feature-add.md) |
+| リファクタリング | [docs/guides/workflows/refactor.md](docs/guides/workflows/refactor.md)       |
+| 環境整備         | [docs/guides/workflows/env-setup.md](docs/guides/workflows/env-setup.md)     |
 
 作業ログは `docs/tasks/ai-logs/YYYY-MM-DD_{slug}.md` に保存します。

@@ -64,33 +64,7 @@ devbox run setup
 
 ## スクリプト一覧
 
-### 基本コマンド
-
-```bash
-devbox run setup     # pre-commit フックをインストール
-devbox run versions  # バージョン確認
-devbox run lint      # 全ファイルの lint を実行
-devbox run format    # 全ファイルをフォーマット
-```
-
-### 言語別コマンド
-
-```bash
-# TypeScript/JavaScript
-devbox run lint:ts     # oxlint
-devbox run format:ts   # oxfmt
-
-# Markdown
-devbox run lint:md     # markdownlint
-
-# Dart
-devbox run lint:dart   # dart analyze
-devbox run format:dart # dart format
-
-# Swift
-devbox run lint:swift   # swift-format lint
-devbox run format:swift # swift-format
-```
+利用可能なスクリプトは [スクリプト一覧](./scripts.md) を参照してください。
 
 ## テンプレートからの新規プロジェクト作成
 

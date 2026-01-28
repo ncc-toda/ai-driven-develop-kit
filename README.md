@@ -6,7 +6,7 @@ AI 駆動開発のためのテンプレートプロジェクト。
 
 新しいプロジェクトを始めるときは、このリポジトリをコピーしてください。
 
-詳細なセットアップ手順は [docs/rules/general/setup.md](docs/rules/general/setup.md) を参照してください。
+詳細なセットアップ手順は [docs/guides/general/setup.md](docs/guides/general/setup.md) を参照してください。
 
 ```bash
 # クイックスタート
@@ -21,7 +21,7 @@ devbox run setup
 
 [devbox](https://www.jetify.com/devbox) で開発環境を管理しています。
 
-詳細は [docs/rules/general/setup.md](docs/rules/general/setup.md) を参照してください。
+詳細は [docs/guides/general/setup.md](docs/guides/general/setup.md) を参照してください。
 
 ### 利用可能な言語
 
@@ -52,7 +52,7 @@ devbox run setup
 └── ...                      # 設定ファイル類
 ```
 
-詳細は [docs/rules/general/structure.md](docs/rules/general/structure.md) を参照してください。
+詳細は [docs/guides/general/structure.md](docs/guides/general/structure.md) を参照してください。
 
 ## ライセンス
 
