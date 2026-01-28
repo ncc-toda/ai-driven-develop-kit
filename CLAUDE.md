@@ -29,4 +29,19 @@ devbox run format
 | プロジェクト構造           | [docs/rules/general/structure.md](docs/rules/general/structure.md)     |
 | コミットルール・pre-commit | [docs/rules/git/git-common.md](docs/rules/git/git-common.md)           |
 | 現フェーズの Git 運用      | [docs/rules/git/git-pre-release.md](docs/rules/git/git-pre-release.md) |
-| タスク管理                 | [docs/pre-release-task/index.md](docs/pre-release-task/index.md)       |
+| タスク管理                 | [docs/tasks/pre-release/index.md](docs/tasks/pre-release/index.md)     |
+| ワークフロー               | [docs/rules/workflows/index.md](docs/rules/workflows/index.md)         |
+
+## ワークフロー
+
+開発タスクはワークフローファイルに従って進めます。
+使用時は「`{ファイルパス}` に従って作業してください。{作業内容}」の形式で指示します。
+
+| ワークフロー     | ファイル                                                                   |
+| ---------------- | -------------------------------------------------------------------------- |
+| バグ修正         | [docs/rules/workflows/bug-fix.md](docs/rules/workflows/bug-fix.md)         |
+| 機能追加         | [docs/rules/workflows/feature-add.md](docs/rules/workflows/feature-add.md) |
+| リファクタリング | [docs/rules/workflows/refactor.md](docs/rules/workflows/refactor.md)       |
+| 環境整備         | [docs/rules/workflows/env-setup.md](docs/rules/workflows/env-setup.md)     |
+
+作業ログは `docs/tasks/ai-logs/YYYY-MM-DD_{slug}.md` に保存します。
