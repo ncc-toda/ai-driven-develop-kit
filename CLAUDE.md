@@ -38,11 +38,28 @@ devbox run format
 開発タスクはワークフローファイルに従って進めます。
 使用時は「`{ファイルパス}` に従って作業してください。{作業内容}」の形式で指示します。
 
-| ワークフロー     | ファイル                                                                     |
-| ---------------- | ---------------------------------------------------------------------------- |
-| バグ修正         | [docs/guides/workflows/bug-fix.md](docs/guides/workflows/bug-fix.md)         |
-| 機能追加         | [docs/guides/workflows/feature-add.md](docs/guides/workflows/feature-add.md) |
-| リファクタリング | [docs/guides/workflows/refactor.md](docs/guides/workflows/refactor.md)       |
-| 環境整備         | [docs/guides/workflows/env-setup.md](docs/guides/workflows/env-setup.md)     |
+### pre-release（新規開発）
+
+| ワークフロー     | ファイル                                                                                                       |
+| ---------------- | -------------------------------------------------------------------------------------------------------------- |
+| 要件定義         | [docs/guides/workflows/pre-release/requirements.md](docs/guides/workflows/pre-release/requirements.md)         |
+| 初期設計         | [docs/guides/workflows/pre-release/initial-design.md](docs/guides/workflows/pre-release/initial-design.md)     |
+| プロジェクト構築 | [docs/guides/workflows/pre-release/project-setup.md](docs/guides/workflows/pre-release/project-setup.md)       |
+| 設計書作成       | [docs/guides/workflows/pre-release/design-doc.md](docs/guides/workflows/pre-release/design-doc.md)             |
+| 設計に基づく実装 | [docs/guides/workflows/pre-release/impl-from-design.md](docs/guides/workflows/pre-release/impl-from-design.md) |
+
+### post-release（運用）
+
+| ワークフロー     | ファイル                                                                                               |
+| ---------------- | ------------------------------------------------------------------------------------------------------ |
+| バグ修正         | [docs/guides/workflows/post-release/bug-fix.md](docs/guides/workflows/post-release/bug-fix.md)         |
+| 機能追加         | [docs/guides/workflows/post-release/feature-add.md](docs/guides/workflows/post-release/feature-add.md) |
+| リファクタリング | [docs/guides/workflows/post-release/refactor.md](docs/guides/workflows/post-release/refactor.md)       |
+
+### 共通
+
+| ワークフロー | ファイル                                                                               |
+| ------------ | -------------------------------------------------------------------------------------- |
+| 環境整備     | [docs/guides/workflows/common/env-setup.md](docs/guides/workflows/common/env-setup.md) |
 
 作業ログは `docs/tasks/ai-logs/YYYY-MM-DD_{slug}.md` に保存します。
