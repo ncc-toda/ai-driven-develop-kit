@@ -3,6 +3,7 @@
   "packages": [
     "nodejs@24",
     "dart@3",
+    "direnv@latest",
     "pre-commit@latest",
     "oxlint@latest",
     "swift-format@latest",

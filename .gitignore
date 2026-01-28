@@ -1,6 +1,9 @@
 # Devbox
 .devbox/
 
+# direnv
+.direnv/
+
 # Node.js
 node_modules/
 dist/

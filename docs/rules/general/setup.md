@@ -11,9 +11,37 @@
 curl -fsSL https://get.jetify.com/devbox | bash
 ```
 
-## 2. 開発シェルに入る
+## 2. direnv の設定（推奨）
+
+direnv を使うと、ディレクトリに入るだけで自動的に開発環境がロードされます。
+
+シェルの設定ファイルに以下を追加:
 
 ```bash
+# fish (~/.config/fish/config.fish)
+direnv hook fish | source
+
+# zsh (~/.zshrc)
+eval "$(direnv hook zsh)"
+
+# bash (~/.bashrc)
+eval "$(direnv hook bash)"
+```
+
+初回のみ許可が必要:
+
+```bash
+cd ai-driven-develop-kit
+direnv allow
+```
+
+## 3. 開発環境の起動
+
+```bash
+# direnv 設定済みの場合: cd するだけで自動ロード
+cd ai-driven-develop-kit
+
+# direnv 未設定の場合: 手動でシェルに入る
 devbox shell
 ```
 
@@ -26,7 +54,7 @@ devbox shell
 | Swift      | システム版   | Xcode 付属         |
 | Markdown   | -            | ドキュメント用     |
 
-## 3. pre-commit フックのインストール
+## 4. pre-commit フックのインストール
 
 ```bash
 devbox run setup
@@ -76,6 +104,11 @@ cd your-new-project
 # 初期化
 rm -rf .git
 git init
+
+# direnv を許可（direnv 設定済みの場合）
+direnv allow
+
+# または手動でシェルに入る
 devbox shell
 
 # pre-commit フックをインストール
