@@ -1,0 +1,56 @@
+repos:
+  # TypeScript/JavaScript - oxlint (fast linter)
+  - repo: local
+    hooks:
+      - id: oxlint
+        name: oxlint
+        entry: oxlint
+        language: system
+        files: \.(js|jsx|ts|tsx|mjs|cjs)$
+
+  # oxfmt (fast formatter) - JS/TS/JSON/YAML/Markdown
+  - repo: local
+    hooks:
+      - id: oxfmt
+        name: oxfmt
+        entry: oxfmt --write
+        language: system
+        files: \.(js|jsx|ts|tsx|mjs|cjs|json|yaml|yml|md)$
+
+  # Markdown - lint
+  - repo: local
+    hooks:
+      - id: markdownlint
+        name: markdownlint
+        entry: markdownlint-cli2
+        language: system
+        files: \.md$
+
+  # Dart - format & analyze
+  - repo: local
+    hooks:
+      - id: dart-format
+        name: dart format
+        entry: dart format
+        language: system
+        files: \.dart$
+      - id: dart-analyze
+        name: dart analyze
+        entry: dart analyze --fatal-infos
+        language: system
+        files: \.dart$
+        pass_filenames: false
+
+  # Swift - swift-format
+  - repo: local
+    hooks:
+      - id: swift-format
+        name: swift-format
+        entry: swift-format format --in-place
+        language: system
+        files: \.swift$
+      - id: swift-format-lint
+        name: swift-format lint
+        entry: swift-format lint
+        language: system
+        files: \.swift$

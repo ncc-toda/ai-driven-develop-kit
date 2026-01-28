@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.16.0/.schema/devbox.schema.json",
+  "packages": [
+    "nodejs@24",
+    "dart@3",
+    "pre-commit@latest",
+    "oxlint@latest",
+    "swift-format@latest",
+    "oxfmt@latest",
+    "markdownlint-cli2@latest"
+  ],
+  "env": {
+    "DEVBOX_COREPACK_ENABLED": "1"
+  },
+  "shell": {
+    "init_hook": [
+      "echo '🚀 AI-Driven Development Kit'",
+      "echo '  Node.js:' $(node --version 2>/dev/null || echo 'not available')",
+      "echo '  Dart:' $(dart --version 2>&1 | head -1 || echo 'not available')",
+      "echo '  Swift:' $(swift --version 2>&1 | head -1 || echo 'not available (use Xcode)')"
+    ],
+    "scripts": {
+      "setup": "pre-commit install",
+      "versions": "node --version && dart --version && swift --version 2>/dev/null || echo 'Swift: use system Xcode'",
+      "lint": "pre-commit run --all-files",
+      "lint:ts": "oxlint .",
+      "lint:md": "markdownlint-cli2 '**/*.md'",
+      "lint:dart": "dart analyze",
+      "lint:swift": "swift-format lint --recursive .",
+      "format": "oxfmt --write .",
+      "format:ts": "oxfmt --write .",
+      "format:dart": "dart format .",
+      "format:swift": "swift-format format --in-place --recursive ."
+    }
+  }
+}
