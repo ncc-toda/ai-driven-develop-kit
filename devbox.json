@@ -32,6 +32,8 @@
       "format:ts": "oxfmt --write .",
       "format:dart": "dart format .",
       "format:swift": "swift-format format --in-place --recursive .",
+      "test:ts": "npm test",
+      "test:dart": "dart test",
       "github:configure": "./infra/github/configure.sh"
     }
   }
