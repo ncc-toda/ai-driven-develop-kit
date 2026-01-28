@@ -31,7 +31,8 @@
       "format": "oxfmt --write .",
       "format:ts": "oxfmt --write .",
       "format:dart": "dart format .",
-      "format:swift": "swift-format format --in-place --recursive ."
+      "format:swift": "swift-format format --in-place --recursive .",
+      "github:configure": "./infra/github/configure.sh"
     }
   }
 }
