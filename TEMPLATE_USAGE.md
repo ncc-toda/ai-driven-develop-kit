@@ -10,7 +10,6 @@
 | -------------------------------------------------------------------- | ---------------- |
 | [docs/guides/general/structure.md](docs/guides/general/structure.md) | ディレクトリ構成 |
 | [docs/guides/general/setup.md](docs/guides/general/setup.md)         | セットアップ手順 |
-| [docs/guides/workflows/index.md](docs/guides/workflows/index.md)     | ワークフロー概要 |
 
 ## 新しいプロジェクトを始める
 

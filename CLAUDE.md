@@ -31,7 +31,6 @@ devbox run format
 | コミットルール・pre-commit | [docs/guides/git/git-common.md](docs/guides/git/git-common.md)           |
 | 現フェーズの Git 運用      | [docs/guides/git/git-pre-release.md](docs/guides/git/git-pre-release.md) |
 | タスク管理                 | [docs/tasks/pre-release/index.md](docs/tasks/pre-release/index.md)       |
-| ワークフロー一覧           | [docs/guides/workflows/index.md](docs/guides/workflows/index.md)         |
 
 ## ワークフロー（Commands）
 
@@ -62,22 +61,8 @@ devbox run format
 | `/wf-env`   | 環境整備             |
 | `/qa-check` | 静的解析・テスト実行 |
 
-## レビュー（Skills）
-
-レビューは **Skills** として提供されています。Claude が自動的に使用するか、`/skill-name` で呼び出せます。
-
-| Skill                | 用途                       |
-| -------------------- | -------------------------- |
-| `/self-review`       | セルフレビュー（複数観点） |
-| `/review-security`   | セキュリティレビュー       |
-| `/review-senior`     | シニアエンジニアレビュー   |
-| `/review-qa`         | QA レビュー                |
-| `/review-minimalist` | ミニマリストレビュー       |
-| `/review-ux`         | UI/UX レビュー             |
-| `/review-ts`         | TypeScript レビュー        |
-| `/review-dart`       | Dart/Flutter レビュー      |
-| `/review-swift`      | Swift/iOS レビュー         |
-| `/review-web`        | Web フロントエンドレビュー |
-| `/review-mobile`     | モバイルレビュー           |
+## 作業ログ・報告
 
 作業ログは `docs/tasks/ai-logs/YYYY-MM-DD_{slug}.md` に保存します。
+
+対応完了時の報告では、使用した Command・Skill を明記してください。
