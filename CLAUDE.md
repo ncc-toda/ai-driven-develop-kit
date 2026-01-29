@@ -38,27 +38,27 @@ devbox run format
 
 ### pre-release（新規開発）
 
-| Command            | 用途               |
-| ------------------ | ------------------ |
-| `/wf-requirements` | 要件定義           |
-| `/wf-design`       | 初期設計           |
-| `/wf-setup`        | プロジェクト構築   |
-| `/wf-design-doc`   | 設計書作成         |
-| `/wf-design-impl`  | 設計書に基づく実装 |
+| Command         | 用途               |
+| --------------- | ------------------ |
+| `/requirements` | 要件定義           |
+| `/design`       | 初期設計           |
+| `/setup`        | プロジェクト構築   |
+| `/design-doc`   | 設計書作成         |
+| `/design-impl`  | 設計書に基づく実装 |
 
 ### post-release（運用）
 
-| Command        | 用途             |
-| -------------- | ---------------- |
-| `/wf-bugfix`   | バグ修正（TDD）  |
-| `/wf-feature`  | 機能追加（TDD）  |
-| `/wf-refactor` | リファクタリング |
+| Command     | 用途             |
+| ----------- | ---------------- |
+| `/bugfix`   | バグ修正（TDD）  |
+| `/feature`  | 機能追加（TDD）  |
+| `/refactor` | リファクタリング |
 
 ### 共通
 
-| Command   | 用途     |
-| --------- | -------- |
-| `/wf-env` | 環境整備 |
+| Command | 用途     |
+| ------- | -------- |
+| `/env`  | 環境整備 |
 
 ## 作業ログ・報告
 
