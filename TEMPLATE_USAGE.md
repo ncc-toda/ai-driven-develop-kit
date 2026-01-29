@@ -14,17 +14,15 @@
 ## 新しいプロジェクトを始める
 
 ```bash
-# リポジトリをコピー
-cp -r ai-driven-develop-kit your-new-project
-cd your-new-project
+# コピー先ディレクトリを作成して移動
+mkdir -p /path/to/your-new-project
+cd /path/to/your-new-project
 
-# Git を初期化
-rm -rf .git && git init
-
-# 開発環境をセットアップ
-devbox shell
-devbox run setup
+# テンプレートの中身をカレントディレクトリにコピー
+cp -r /path/to/ai-driven-develop-kit/. .
 ```
+
+コピー後は `/init-project` コマンドを実行してください（Git 初期化や環境セットアップを自動化）。
 
 ## コピー後の作業
 
