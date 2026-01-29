@@ -31,39 +31,53 @@ devbox run format
 | コミットルール・pre-commit | [docs/guides/git/git-common.md](docs/guides/git/git-common.md)           |
 | 現フェーズの Git 運用      | [docs/guides/git/git-pre-release.md](docs/guides/git/git-pre-release.md) |
 | タスク管理                 | [docs/tasks/pre-release/index.md](docs/tasks/pre-release/index.md)       |
-| ワークフロー               | [docs/guides/workflows/index.md](docs/guides/workflows/index.md)         |
+| ワークフロー一覧           | [docs/guides/workflows/index.md](docs/guides/workflows/index.md)         |
 
-## ワークフロー
+## ワークフロー（Commands）
 
-開発タスクはワークフローファイルに従って進めます。
-使用時は「`{ファイルパス}` に従って作業してください。{作業内容}」の形式で指示します。
+開発タスクは **Commands** として提供されています。`/command-name` の形式で呼び出してください。
 
 ### pre-release（新規開発）
 
-詳細・推奨フローは [docs/guides/workflows/pre-release/index.md](docs/guides/workflows/pre-release/index.md) を参照。
-
-| ワークフロー     | ファイル                                                                                                       |
-| ---------------- | -------------------------------------------------------------------------------------------------------------- |
-| 要件定義         | [docs/guides/workflows/pre-release/requirements.md](docs/guides/workflows/pre-release/requirements.md)         |
-| 初期設計         | [docs/guides/workflows/pre-release/initial-design.md](docs/guides/workflows/pre-release/initial-design.md)     |
-| プロジェクト構築 | [docs/guides/workflows/pre-release/project-setup.md](docs/guides/workflows/pre-release/project-setup.md)       |
-| 設計書作成       | [docs/guides/workflows/pre-release/design-doc.md](docs/guides/workflows/pre-release/design-doc.md)             |
-| 設計に基づく実装 | [docs/guides/workflows/pre-release/impl-from-design.md](docs/guides/workflows/pre-release/impl-from-design.md) |
+| Command            | 用途               |
+| ------------------ | ------------------ |
+| `/wf-requirements` | 要件定義           |
+| `/wf-design`       | 初期設計           |
+| `/wf-setup`        | プロジェクト構築   |
+| `/wf-design-doc`   | 設計書作成         |
+| `/wf-design-impl`  | 設計書に基づく実装 |
 
 ### post-release（運用）
 
-詳細・選択ガイドは [docs/guides/workflows/post-release/index.md](docs/guides/workflows/post-release/index.md) を参照。
-
-| ワークフロー     | ファイル                                                                                               |
-| ---------------- | ------------------------------------------------------------------------------------------------------ |
-| バグ修正         | [docs/guides/workflows/post-release/bug-fix.md](docs/guides/workflows/post-release/bug-fix.md)         |
-| 機能追加         | [docs/guides/workflows/post-release/feature-add.md](docs/guides/workflows/post-release/feature-add.md) |
-| リファクタリング | [docs/guides/workflows/post-release/refactor.md](docs/guides/workflows/post-release/refactor.md)       |
+| Command        | 用途             |
+| -------------- | ---------------- |
+| `/wf-bugfix`   | バグ修正（TDD）  |
+| `/wf-feature`  | 機能追加（TDD）  |
+| `/wf-refactor` | リファクタリング |
 
 ### 共通
 
-| ワークフロー | ファイル                                                                               |
-| ------------ | -------------------------------------------------------------------------------------- |
-| 環境整備     | [docs/guides/workflows/common/env-setup.md](docs/guides/workflows/common/env-setup.md) |
+| Command     | 用途                 |
+| ----------- | -------------------- |
+| `/wf-env`   | 環境整備             |
+| `/qa-check` | 静的解析・テスト実行 |
+
+## レビュー（Skills）
+
+レビューは **Skills** として提供されています。Claude が自動的に使用するか、`/skill-name` で呼び出せます。
+
+| Skill                | 用途                       |
+| -------------------- | -------------------------- |
+| `/self-review`       | セルフレビュー（複数観点） |
+| `/review-security`   | セキュリティレビュー       |
+| `/review-senior`     | シニアエンジニアレビュー   |
+| `/review-qa`         | QA レビュー                |
+| `/review-minimalist` | ミニマリストレビュー       |
+| `/review-ux`         | UI/UX レビュー             |
+| `/review-ts`         | TypeScript レビュー        |
+| `/review-dart`       | Dart/Flutter レビュー      |
+| `/review-swift`      | Swift/iOS レビュー         |
+| `/review-web`        | Web フロントエンドレビュー |
+| `/review-mobile`     | モバイルレビュー           |
 
 作業ログは `docs/tasks/ai-logs/YYYY-MM-DD_{slug}.md` に保存します。
